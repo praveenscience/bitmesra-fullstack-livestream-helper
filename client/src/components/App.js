@@ -23,17 +23,19 @@ class App extends Component {
                   ImgAlign="top"
                   Header={str.Title}
                 >
-                  <Card
-                    Header="YouTube"
-                    TextHeader={true}
-                    Title={str.YouTube.Title}
-                  >
-                    <p className="card-text YouTube-Desc">
-                      {str.YouTube.Description
-                        ? JSON.parse(`"${str.YouTube.Description}"`)
-                        : ""}
-                    </p>
-                  </Card>
+                  {str.YouTube.Title && str.YouTube.Description && (
+                    <Card
+                      Header="YouTube"
+                      TextHeader={true}
+                      Title={str.YouTube.Title}
+                    >
+                      <p className="card-text YouTube-Desc">
+                        {str.YouTube.Description
+                          ? JSON.parse(`"${str.YouTube.Description}"`)
+                          : ""}
+                      </p>
+                    </Card>
+                  )}
                 </Card>
               </div>
             ))}
