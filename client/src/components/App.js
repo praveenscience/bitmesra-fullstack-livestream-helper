@@ -22,6 +22,53 @@ class App extends Component {
                   }
                   ImgAlign="top"
                   Header={str.Title}
+                  Extras={
+                    <ul className="list-group list-group-flush">
+                      <li className="list-group-item list-group-item-info">
+                        Progress
+                      </li>
+                      <li className="list-group-item">
+                        <i
+                          className={
+                            "fa fa-" +
+                            (str.DateTime ? "check-" : "") +
+                            "square mr-1"
+                          }
+                        ></i>
+                        Date and Time
+                      </li>
+                      <li className="list-group-item">
+                        <i
+                          className={
+                            "fa fa-" +
+                            (str.CoHosts.length > 0 ? "check-" : "") +
+                            "square mr-1"
+                          }
+                        ></i>
+                        Host / Co-Host
+                      </li>
+                      <li className="list-group-item">
+                        <i
+                          className={
+                            "fa fa-" +
+                            (str.Designs.Thumbnail ? "check-" : "") +
+                            "square mr-1"
+                          }
+                        ></i>
+                        Poster
+                      </li>
+                      <li className="list-group-item">
+                        <i
+                          className={
+                            "fa fa-" +
+                            (str.StreamURL ? "check-" : "") +
+                            "square mr-1"
+                          }
+                        ></i>
+                        YouTube Live Stream
+                      </li>
+                    </ul>
+                  }
                 >
                   {str.YouTube.Title && str.YouTube.Description && (
                     <Card
