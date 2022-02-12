@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header dark={true} className="Header mb-3 justify-content-center">
+        <Header dark={true} className="Header justify-content-center">
           LiveStream Helper
         </Header>
       </div>
