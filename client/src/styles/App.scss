@@ -1,5 +1,10 @@
 .App {
   @import "Bootstrap/Header";
+  .card-header {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .YouTube-Desc {
     white-space: pre-wrap;
   }
