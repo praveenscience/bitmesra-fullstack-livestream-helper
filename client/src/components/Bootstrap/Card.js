@@ -7,7 +7,8 @@ const Card = ({
   Text,
   children,
   Footer,
-  className
+  className,
+  Extras
 }) => {
   return (
     <div className={"card" + (className ? " " + className : "")}>
@@ -31,6 +32,7 @@ const Card = ({
           {children}
         </div>
       )}
+      {Extras}
       {Footer && <div className="card-footer text-muted">{Footer}</div>}
     </div>
   );
