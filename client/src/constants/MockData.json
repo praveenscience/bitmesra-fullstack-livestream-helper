@@ -25,8 +25,9 @@
         "LinkedIn": "https://linkedin.com/in/vaishnavi"
       }
     ],
+    "Type": "",
     "StreamURL": "https://rb.gy/vi62af",
-    "FormUrl": null,
+    "FormUrls": [],
     "DateTime": 1644669900000,
     "Certificates": {
       "Enabled": false,
@@ -65,8 +66,9 @@
       "Overlay": null
     },
     "CoHosts": [],
+    "Type": "",
     "StreamURL": null,
-    "FormUrl": null,
+    "FormUrls": [],
     "DateTime": null,
     "Certificates": {
       "Enabled": false,
